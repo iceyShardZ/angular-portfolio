@@ -1,1 +1,109 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+  --dark: #262526;
+  --light: #EDECED;
+  --sky: #CDDEEA;
+}
+
+body{
+margin: 0px;
+background-color: var(--light);
+width: 100vw;
+height: 100vh;
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.headline{
+  font-family: "Abril Fatface";
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-rendering: optimizeLegibility;
+  word-spacing: 0.3vw;
+}
+.text{
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.outer-grid{
+  position: relative;
+  z-index: 99;
+  display: grid;
+  grid-template-columns: 9fr 70fr 9fr;
+}
+
+.inner-grid{
+  position: relative;
+  z-index: 99;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-gap:2.3vw;
+}
+.inner-grid-absolute{
+  position: relative;
+  opacity: 0.2;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-gap:2.3vw;
+}
+.inner-grid-absolute-invisible{
+  display: none;
+}
+.box{
+  background-color: aquamarine;
+  height: 100px;
+}
+
+/* Grid spans: */
+.grid-12{
+  grid-column: span 12;
+}
+.grid-11{
+  grid-column: span 11;
+}
+.grid-10{
+  grid-column: span 10;
+}
+.grid-9{
+  grid-column: span 9;
+}
+.grid-8{
+  grid-column: span 8;
+}
+.grid-7{
+  grid-column: span 7;
+}
+.grid-6{
+  grid-column: span 6;
+}
+.grid-5{
+  grid-column: span 5;
+}
+.grid-4{
+  grid-column: span 4;
+}
+.grid-3{
+  grid-column: span 3;
+}
+.grid-2{
+  grid-column: span 2;
+}
+.grid-1{
+  grid-column: span 1;
+}
+
+.spacedown{
+  height: 202.3885px;
+}
+
+
+
+
+
+

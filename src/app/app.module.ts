@@ -3,10 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { WelcomeTextComponent } from './components/welcome-text/welcome-text.component';
+import { GridVisualComponent } from './components/grid-visual/grid-visual.component';
+import { MountainsComponent } from './components/mountains/mountains.component';
+import { BlackParallelogramComponent } from './components/black-parallelogram/black-parallelogram.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WelcomeTextComponent,
+    GridVisualComponent,
+    MountainsComponent,
+    BlackParallelogramComponent
   ],
   imports: [
     BrowserModule,

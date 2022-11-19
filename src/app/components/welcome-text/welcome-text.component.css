@@ -1,0 +1,23 @@
+.text-div{
+  padding-top: 8.3vw;
+  font-size: 2.03vw;
+  color: var(--dark);
+  word-wrap: normal;
+  line-height: 3.9vw;
+  transform-origin: left;
+  scale: 1.03;
+}
+.mark-span{
+  background-color: var(--sky);
+  padding-left: 1vw;
+  padding-right: 1vw;
+
+}
+.line-space-closer{
+  line-height: 1.8vw;
+}
+
+.blue-span{
+  color: var(--sky);
+}
+
