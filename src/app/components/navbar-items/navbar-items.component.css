@@ -1,0 +1,63 @@
+
+.nav-items{
+visibility: visible;
+position: relative;
+margin-top: 2.8vw;
+user-select: none;
+}
+.nav-items-hovering{
+visibility: visible;
+position: relative;
+margin-top: 2.8vw;
+user-select: none;
+}
+
+
+.nav-items :nth-child(1):not(.nav-item-hover) {
+ transition-delay: 0.125s;
+}
+.nav-items-invisible :nth-child(1):not(.nav-item-hover) {
+  transition-delay: 0.125s;
+}
+.nav-items :nth-child(2):not(.nav-item-hover) {
+ transition-delay: 0.25s;
+}
+.nav-items-invisible :nth-child(2):not(.nav-item-hover) {
+ transition-delay: 0.25s;
+}
+.nav-items :nth-child(3):not(.nav-item-hover) {
+ transition-delay: 0.375s;
+}
+.nav-items-invisible :nth-child(3):not(.nav-item-hover) {
+ transition-delay: 0.375s;
+}
+.nav-items :nth-child(4):not(.nav-item-hover) {
+ transition-delay: 0.5s;
+}
+.nav-items-invisible :nth-child(4):not(.nav-item-hover) {
+ transition-delay: 0.5s;
+}
+
+.nav-item{
+font-size: 1.4vw;
+color: var(--dark);
+transition: 0.1s ease-in;
+opacity: 1;
+}
+.nav-item-hover{
+  transition: 0.1s ease-in !important;
+  color: var(--sky);
+  cursor: pointer;
+}
+.nav-item-hover:active{
+  transform: translate(0px,5px);
+}
+
+.nav-item-invisible{
+font-size: 1.4vw;
+color: var(--dark);
+opacity: 0;
+margin-left: -15px;
+visibility: hidden;
+transition: 0.1s ease-in;
+}

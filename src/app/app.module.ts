@@ -7,6 +7,8 @@ import { WelcomeTextComponent } from './components/welcome-text/welcome-text.com
 import { GridVisualComponent } from './components/grid-visual/grid-visual.component';
 import { MountainsComponent } from './components/mountains/mountains.component';
 import { BlackParallelogramComponent } from './components/black-parallelogram/black-parallelogram.component';
+import { MenuButtonComponent } from './components/menu-button/menu-button.component';
+import { NavbarItemsComponent } from './components/navbar-items/navbar-items.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { BlackParallelogramComponent } from './components/black-parallelogram/bl
     WelcomeTextComponent,
     GridVisualComponent,
     MountainsComponent,
-    BlackParallelogramComponent
+    BlackParallelogramComponent,
+    MenuButtonComponent,
+    NavbarItemsComponent
   ],
   imports: [
     BrowserModule,

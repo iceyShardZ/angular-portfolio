@@ -1,0 +1,14 @@
+<div [ngClass]="{ 'nav-items': hoveringItemNumber == 0,'nav-items-hovering': hoveringItemNumber !== 0}">
+  <div class="headline" [ngClass]="{ 'nav-item': visible,'nav-item-invisible': !visible,'nav-item-hover': hoveringItemNumber == 1 }"
+  (mouseenter)="onItemHover(1)" (mouseleave)="onItemLeave()"
+  >Home</div>
+  <div class="headline" [ngClass]="{ 'nav-item': visible,'nav-item-invisible': !visible,'nav-item-hover': hoveringItemNumber == 2 }"
+  (mouseenter)="onItemHover(2)" (mouseleave)="onItemLeave()"
+  >Projects</div>
+  <div class="headline" [ngClass]="{ 'nav-item': visible,'nav-item-invisible': !visible,'nav-item-hover': hoveringItemNumber == 3 }"
+  (mouseenter)="onItemHover(3)" (mouseleave)="onItemLeave()"
+  >About</div>
+  <div class="headline" [ngClass]="{ 'nav-item': visible,'nav-item-invisible': !visible,'nav-item-hover': hoveringItemNumber == 4 }"
+  (mouseenter)="onItemHover(4)" (mouseleave)="onItemLeave()"
+  >Contact</div>
+</div>

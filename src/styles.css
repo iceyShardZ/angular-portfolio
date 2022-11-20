@@ -19,6 +19,16 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: var(--sky);
+  background: var(--dark);
+}
+
+::selection {
+  color: var(--sky);
+  background: var(--dark);
+}
+
 .headline{
   font-family: "Abril Fatface";
   font-weight: 500;
@@ -42,8 +52,10 @@ body::-webkit-scrollbar {
   position: relative;
   z-index: 99;
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-columns: repeat(12,minmax(0, 2fr));
   grid-gap:2.3vw;
+  min-height: 0;  /* NEW */
+  min-width: 0;   /* NEW; needed for Firefox */
 }
 .inner-grid-absolute{
   position: relative;

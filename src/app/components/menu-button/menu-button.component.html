@@ -1,0 +1,13 @@
+<div [ngClass]="{'menu-button': !clicked,'menu-button-active': clicked}"
+(mouseenter)="blueSquares()" (mouseleave)="pauseBlueSquares()" (click)="toggleMenu()">
+  <div [ngClass]="{'mb-square-glow': glowSquare == 1,'mb-square': glowSquare !== 1}"></div>
+  <div [ngClass]="{'mb-square-glow': glowSquare == 2,'mb-square': glowSquare !== 2}"></div>
+  <div [ngClass]="{'mb-square-glow': glowSquare == 3,'mb-square': glowSquare !== 3}"></div>
+  <div [ngClass]="{'mb-square-glow': glowSquare == 4,'mb-square': glowSquare !== 4}"></div>
+  <div [ngClass]="{'mb-square-glow': glowSquare == 5,'mb-square': glowSquare !== 5}"></div>
+  <div [ngClass]="{'mb-square-glow': glowSquare == 6,'mb-square': glowSquare !== 6}"></div>
+  <div [ngClass]="{'mb-square-glow': glowSquare == 7,'mb-square': glowSquare !== 7}"></div>
+  <div [ngClass]="{'mb-square-glow': glowSquare == 8,'mb-square': glowSquare !== 8}"></div>
+  <div [ngClass]="{'mb-square-glow': glowSquare == 9,'mb-square': glowSquare !== 9}"></div>
+</div>
+<app-navbar-items [visible]="clicked"></app-navbar-items>

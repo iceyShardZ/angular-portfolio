@@ -1,0 +1,33 @@
+.menu-button{
+  margin-left: 0.88vw;
+  margin-top: 5vw;
+  display: grid;
+  grid-template-columns: 0.64vw 0.64vw 0.64vw;
+  grid-gap:0.368vw;
+  cursor: pointer;
+  transform-origin: 1.328vw 1.328vw;
+  transition: 0.7s cubic-bezier(.02,.77,.53,1);
+}
+.menu-button-active{
+  margin-left: 0.88vw;
+  margin-top: 5vw;
+  display: grid;
+  grid-template-columns: 0.64vw 0.64vw 0.64vw;
+  grid-gap:0.368vw;
+  cursor: pointer;
+  transform: rotate(-405deg);
+  transform-origin: 1.328vw 1.328vw;
+  transition: 0.7s cubic-bezier(.02,.77,.53,1);
+}
+.mb-square{
+  transition: 0.04s ease-out;
+  height: 0.64vw;
+  width: 0.64vw;
+  background-color: var(--dark);
+}
+.mb-square-glow{
+  transition: 0.1s ease-out;
+  height: 0.64vw;
+  width: 0.64vw;
+  background-color: var(--sky);
+}
